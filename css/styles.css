@@ -1,28 +1,52 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    margin: 0;
+    color: #333;
 }
 
 header {
-    background-color: #a84705;
-    margin: 0;
+    background-color: #FA6900;
 }
 
 body {
-    background-color: #333;
+    background-color: #E0E4CC;
 }
 
+ul {
+    margin: 4px;
+}
 
-
+footer {
+    font-size: .75em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FA6900;
+}
 
 .main-contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
+    justify-content: space-between;
+}
+
+.name {
+    display: inline;
+    align-self: flex-start;
+    font-size:4.5em;
+}
+
+.fleur {
+    width: 105px;
+    margin: 0 auto;
+    margin-top: -39px;
 }
 
 .contact {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 
@@ -30,10 +54,34 @@ body {
     list-style: none;
     align-self: flex-end;
     margin-right: 10px;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .main-contact a:link {
     text-decoration: none;
-    color: #333;
+}
+
+.logo {
+    width: 1.25em;
+    padding-left: 5px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    align-content: center;
+}
+
+.bio p {
+    margin: 5px;
+    padding: 10px;
+    background: #FA6900;
+    border-radius: 10px;
+}
+
+.bio p:hover {
+    background: #F38630;
 }
