@@ -92,3 +92,7 @@ p.name {
 .bio p:hover {
     background: #F38630;
 }
+
+@media screen and (max-width: 400px) {
+    
+}
