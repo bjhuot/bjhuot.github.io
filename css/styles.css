@@ -73,10 +73,27 @@ p.name {
     padding-left: 5px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px 0;
+}
+
 .bio {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 50px;
     width: 80%;
     max-width: 700px;
     align-content: center;
@@ -95,30 +112,4 @@ p.name {
 
 @media screen and (max-width: 400px) {
     
-}
-
-
-.slider {
-    width: 50%;
-    margin: 100px auto;
-}
-.slick-slide {
-  margin: 0px 20px;
-}
-.slick-slide img {
-  width: 100%;
-}
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-.slick-active {
-  opacity: .5;
-}
-.slick-current {
-  opacity: 1;
 }

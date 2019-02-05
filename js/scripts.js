@@ -7,9 +7,10 @@ function replaceEmail() {
     document.getElementById('mail').href = emailSub;
 }
 
-$(".regular").slick({
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
+$(document).ready(function(){
+    $('#slides').skippr({
+        speed: 1500,
+        autoPlay: true,
+        autoPlayDuration: 3000
+    });
+});
