@@ -6,3 +6,10 @@ function replaceEmail() {
     emailSub = emailSub.replace("@@", ".");
     document.getElementById('mail').href = emailSub;
 }
+
+$(".regular").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
