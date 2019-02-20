@@ -17,12 +17,12 @@ p {
 }
 
 header {
-    background-color: #FA6900;
+    background-color: #8395a7;
     padding: 0 20px;
 }
 
 body {
-    background-color: #E0E4CC;
+    background-color: #f0f2f7;
 }
 
 ul {
@@ -35,7 +35,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #FA6900;
+    background-color: #8395a7;
 }
 
 .main-contact {
@@ -90,7 +90,7 @@ p.name {
 
 .carousel {
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     width: 600px;
     max-width: 70%;
     height: 300px;
@@ -111,16 +111,26 @@ h2 {
     max-width: 700px;
     align-content: center;
 }
+/* For a circular proile pic ... */
+/* .profile {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+} */
 
 .bio p {
     margin: 5px;
     padding: 10px;
-    background: #FA6900;
+    background: #8395a7;
     border-radius: 10px;
 }
 
 .bio p:hover {
-    background: #F38630;
+    background: rgba(131, 149, 167, .9);
+}
+
+div#slides {
+    border: 1px solid #333;
 }
 
 @media screen and (max-width: 400px) {
@@ -132,9 +142,37 @@ h2 {
 
     .fleur {
         width: 70px;
+        margin-top: -26px;
     }
 
     h2 {
         padding-top: 10px;
+    }
+    div.name {
+        font-size:2em;
+    }
+    
+    .contact li {
+        list-style: none;
+        align-self: flex-end;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .bio h2 {
+        flex-basis: 100%;
+    }
+
+    .bio p {
+        width: 48%;
     }
 }
