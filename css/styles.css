@@ -5,6 +5,11 @@
     color: #333;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .name,
 .contact a,
 h2 {
@@ -18,7 +23,7 @@ p {
 
 header {
     background-color: #8395a7;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 body {
@@ -40,14 +45,14 @@ footer {
 
 .main-contact {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    /* align-items: flex-end; */
     justify-content: space-between;
 }
 
 div.name {
     display: inline;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     font-size:2.2em;
 }
 
@@ -133,6 +138,30 @@ div#slides {
     border: 1px solid #333;
 }
 
+
+@media screen and (max-width: 325px) {
+
+    header {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .logo {
+        width: 1em;
+        max-width: 100%;
+        margin: 2px;
+    }
+
+    .contact li {
+        font-size: .75em;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%
+    }
+}
+
 @media screen and (max-width: 400px) {
     .carousel {
         width: 100%;
@@ -142,24 +171,49 @@ div#slides {
 
     .fleur {
         width: 70px;
-        margin-top: -26px;
+        margin-top: -50px;
     }
 
     h2 {
-        padding-top: 10px;
+        padding-top: 15px;
+        margin-top: 10px;
     }
+
     div.name {
-        font-size:2em;
+        font-size: 2.5em;
+        display: flex;
+        justify-content: space-between;
     }
-    
+
+    p.name {
+        display: inline-flex;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
     .contact li {
         list-style: none;
         align-self: flex-end;
         margin-right: 10px;
         font-size: 1em;
+        justify-content: space-around;
+        margin: 40px auto 0;
+    }
+
+    .main-contact {
+        flex-wrap: wrap;
     }
 
 }
+
+@media screen and (min-width: 401px) {
+    .main-contact {
+        flex-direction: row;
+    }
+}
+
 
 @media screen and (min-width: 650px) {
     .bio {
