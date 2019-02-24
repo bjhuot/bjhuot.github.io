@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 4em;
+    color: orange;
+    font-weight: bold;
+}
+#answer {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    background-color: #333;
+}
+
+#initial,
+form.answer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz {
+    flex-basis: 100%;
+    /* width: 75%; */
+    align-items: center;
+}
+
+button {
+    font-size: 1.75em;
+}
+
+
+input#quizQuestion,
+input#quizAnswer,
+input#playerAnswer {
+    width: 100%;
+    font-size: 3em;
+    display: block;
+    margin: 0 auto;
+}
+
+#playerQuestion {
+    font-size: 3em;
+    color: white;
+}
+
+div#results {
+    color: white;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+#score {
+    flex-basis: 100%;
+    width: 100%;
+
+}
+
+#correct,
+#wrong {
+    flex-basis: 50%;
+    width: 40%;
+}
+
+li.question {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+li.answer {
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+#reload {
+    align-self: center;
+}
+

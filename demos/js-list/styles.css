@@ -1,0 +1,160 @@
+* {
+    font-family: sans-serif;
+    resize: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #53dab3;
+    padding: 10px 10px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 10px;
+}
+/**
+*** INPUT & BUTTON STYLING
+**/
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.strike {
+    text-decoration: line-through;
+    color: rgba(51, 51, 51, .5);
+}
+
+.btnUp,
+.btnDown,
+.save {
+    background-color: #53dab3;
+}
+
+.btnRemove {
+    background-color: #f50000;
+    text-align: center;
+    color: black;
+    width: 30px;
+    height: 30px;
+    /* padding: 4px 7px; */
+    border-radius: 50%;
+}
+
+.itemInput,
+.itemDesc {
+    border: none;
+}
+
+.itemInputPrime,
+.itemDescPrime {
+    border: 1px solid #333;
+}
+
+.itemInput,
+.itemInputPrime {
+    margin-top: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.itemDesc,
+.itemDescPrime {
+    height: 3em;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.notepad textarea {
+    width: 100%;
+    height: 20em;
+}
+
+.btnUp {
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #333;
+}
+
+.btnDown {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #333;
+}
+
+/** 
+*** INPUT & BUTTON POSITIONING
+**/
+
+input[type=checkbox] {
+    align-self: center;
+    height: 25px;
+    width: 25px;
+    margin: 0;
+}
+
+li.itemInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inputSpan {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    max-width: 80%;
+}
+
+.btnSave {
+    align-self: center;
+}
+
+.btnTriplet {
+    align-self: center;
+}
+
+ul.saved-items li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 69px;
+    transition: height 200ms ease-in;
+}
+
+/**
+*** MEDIA QUERIES
+**/
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list,
+    .notepad {
+        min-width: 45%;
+        max-width: 45%;
+    }
+}
