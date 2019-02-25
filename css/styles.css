@@ -138,6 +138,22 @@ div#slides {
     border: 1px solid #333;
 }
 
+#slides div {
+    display: flex;
+}
+
+div.slide-info {
+    background-color: rgba(255,255,255,.75);
+    flex-basis: 100%;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+/* .slide-info p {
+    display: flex;
+    vertical-align: bottom;
+    align-self: flex-end;
+} */
 
 @media screen and (max-width: 325px) {
 
