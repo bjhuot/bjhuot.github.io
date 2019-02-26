@@ -46,13 +46,11 @@ footer {
 .main-contact {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
     justify-content: space-between;
 }
 
 div.name {
     display: inline;
-    /* align-self: flex-start; */
     font-size:2.2em;
 }
 
@@ -93,15 +91,6 @@ p.name {
     flex-direction: column;
 }
 
-.carousel {
-    margin: 0 auto;
-    margin-bottom: 80px;
-    width: 600px;
-    max-width: 70%;
-    height: 300px;
-    background-size: cover;
-}
-
 h2 {
     text-align: center;
     padding: 5px 0;
@@ -116,12 +105,6 @@ h2 {
     max-width: 700px;
     align-content: center;
 }
-/* For a circular proile pic ... */
-/* .profile {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-} */
 
 .bio p {
     margin: 5px;
@@ -134,13 +117,25 @@ h2 {
     background: rgba(131, 149, 167, .9);
 }
 
-div#slides {
-    border: 1px solid #333;
+/* Carousel Styling */
+.carousel {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 600px;
+    max-width: 70%;
+    height: 300px;
+    background-size: cover;
 }
 
+div#slides { /* Border around carousel */
+    border: 1px solid #333;
+}
+/* Text overlay describing projects */
 #slides div {
     display: flex;
 }
+/* End Carousel */
+
 
 div.slide-info {
     background-color: rgba(255,255,255,.75);
@@ -148,12 +143,11 @@ div.slide-info {
     align-self: flex-end;
     padding: 5px;
 }
+/* End text overlay */
 
-/* .slide-info p {
-    display: flex;
-    vertical-align: bottom;
-    align-self: flex-end;
-} */
+/**
+***  MEDIA QUERIES
+**/
 
 @media screen and (max-width: 325px) {
 
@@ -179,6 +173,8 @@ div.slide-info {
 }
 
 @media screen and (max-width: 400px) {
+   
+    /* Resizes carousel and fleur de lis */
     .carousel {
         width: 100%;
         height: 200px;
@@ -225,9 +221,11 @@ div.slide-info {
 }
 
 @media screen and (min-width: 401px) {
+    
     .main-contact {
         flex-direction: row;
     }
+
 }
 
 

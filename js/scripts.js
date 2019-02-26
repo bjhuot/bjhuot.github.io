@@ -7,6 +7,8 @@ function replaceEmail() {
     document.getElementById('mail').href = emailSub;
 }
 
+
+// Calls skippr
 $(document).ready(function(){
     $('#slides').skippr({
         speed: 1500,
