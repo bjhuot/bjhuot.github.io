@@ -1,48 +1,236 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Brian Huot - &lt;code&gt;Louisville Student</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" href="css/skippr.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Raleway:300" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="main-contact">
-                <div class="name">
-                    <p class="name">BRIAN</p>
-                    <p class="name">HUOT</p>
-                </div>
-                <ul class="contact">
-                    <li><a href="mailto:brian@@huot@gmail.com" id="mail" onclick="replaceEmail()">Email<img src="img/mail-black-envelope-symbol.svg" class="logo"></a></li>
-                    <li><a href="http://www.github.com/bjhuot">Github<img src="img/github-logo.svg" class="logo"></a></li>
-                    <li><a href="https://www.linkedin.com/in/brian-huot-01a9b117a/">LinkedIn<img src="img/linkedin-logo.svg" class="logo"></a></li>
-                </ul>
-            </div>
-        </header>
-        <div class="fleur">
-            <img src="img/lis.svg" class="fleur">
+  <head>
+    <title>Brian Huot - Fullstack Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <h1 class="name">
+          BRIAN HUOT
+        </h1>
+        <!-- <img
+        src="img/lis.svg"
+        class=" align-top fleur"
+        alt="Line drawing of a fleur-de-lis"
+      /> -->
+        <ul class="contact d-flex">
+          <li>
+            <a
+              href="mailto:brian@@huot@gmail.com"
+              id="mail"
+              onclick="replaceEmail()"
+              ><img
+                src="img/mail-black-envelope-symbol.svg"
+                class="d-inline-block align-top logo mx-1 nav-img"
+                alt="Drawing of an envelope."
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="Email Me"
+            /></a>
+          </li>
+          <li>
+            <a href="http://www.github.com/bjhuot"
+              ><img
+                src="img/github-logo.svg"
+                class="d-inline-block align-top logo mx-1 nav-img"
+                alt="GitHub Logo"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="GitHub Profile"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/brian-huot-01a9b117a/"
+              ><img
+                src="img/linkedin-logo.svg"
+                class="d-inline-block align-top mx-1 nav-img"
+                alt="LinkedIn Logo"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="LinkedIn Profile"
+            /></a>
+          </li>
+          <li>
+            <a href="HuotResume.pdf">
+              <img
+                src="img/file.svg"
+                class="d-inline-block align-top mx-1 nav-img"
+                alt="Drawing of stacked documents"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="View Resume"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div class="card">
+        <h5 class="card-header">About Me</h5>
+        <div class="breakpoint">
+          <div class="card-body">
+            <h6 class="card-title">Overview</h6>
+            <p class="card-text">
+              Greetings! My name is Brian Huot, and I'm an aspiring programmer
+              in Louisville, KY. As a &lt;code&gt;Louisville student, I've had
+              the opportunity to gain and sharpen my web development skills in a
+              cooperative environment with local industry leaders and peers on
+              the same journey as I am.
+            </p>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">History</h6>
+            <p class="card-text">
+              When not writing code, I work as a bookkeeper for a large retail
+              chain and also serve as the director of a local high school debate
+              league. The analytical, organizational, and leadership skills from
+              these jobs make me a well-rounded, ideal candidate for any number
+              of positions. Preview my work below or check out the code on
+              Github above, then contact me!
+            </p>
+          </div>
         </div>
-        <div class="wrapper">
-            <div class="bio">
-                <h2>Bio</h2>
-                <p>Greetings! My name is Brian Huot, and I'm a programming student in Louisville, KY currently learning HTML, CSS, and JavaScript. As a &lt;code&gt;Louisville student, I've had the chance thus far to gain and sharpen these skills in a cooperative environment with local industry leaders peers on the same journey as I am.</p>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Personal Projects</h5>
+        <div class="breakpoint">
+          <div class="card-body">
+            <h6 class="card-title">List.IO</h6>
+            <p class="card-text">
+              List.io is the front-end framework, written in vanilla JavaScript,
+              for a to-do list. Basic functionality includes adding, reordering,
+              and deleting list items.
+            </p>
+            <a
+              href="https://github.com/bjhuot/Listio"
+              class="btn btn-dark btn-sm"
+              >GitHub</a
+            >
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">QuizMe</h6>
+            <p class="card-text">
+              Quiz.me is a fully functional two-person quiz game written in
+              vanilla JavaScript. Player 1 enters a series of questions and
+              answers which will then be answered by Player 2. Finally, a score
+              is calculated and the player is shown which questions were
+              answered correctly or incorrectly.
+            </p>
+            <div class="btn-toolbar">
+              <div class="btn-group mr-auto">
+                <a
+                  href="https://github.com/bjhuot/quiz-site"
+                  class="btn btn-dark btn-sm"
+                  >GitHub</a
+                >
+              </div>
+              <div class="btn-group">
+                <a
+                  href="http://brianhuot.com/quiz-site"
+                  class="btn btn-dark btn-sm"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-light btn-sm icon-button"
+          data-toggle="modal"
+          data-target="#iconModal"
+        >
+          Icons
+        </button>
 
-                <p>When not writing code, I work as a bookkeeper for a large retail chain and also serve as the Director of a local high school debate league. The analytical, organizational, and leadership skills from these jobs make me a well-rounded, ideal candidate for any number of positions. Preview my work below or check out the code on Github above, then contact me!</p>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="iconModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="iconInfo"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="iconInfo">
+                  Icons under Creative Commons BY 3.0
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  Icons made by
+                  <a href="https://www.freepik.com/" title="Freepik">Freepik</a
+                  >,
+                  <a
+                    href="https://www.flaticon.com/authors/simpleicon"
+                    title="SimpleIcon"
+                    >SimpleIcon</a
+                  >, and
+                  <a
+                    href="https://www.flaticon.com/authors/dave-gandy"
+                    title="Dave Gandy"
+                    >Dave Gandy</a
+                  >
+                  from
+                  <a href="https://www.flaticon.com/" title="Flaticon"
+                    >www.flaticon.com</a
+                  >
+                  are licensed by
+                  <a
+                    href="http://creativecommons.org/licenses/by/3.0/"
+                    title="Creative Commons BY 3.0"
+                    target="_blank"
+                    >CC 3.0 BY.</a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="carousel">
-                <h2>Demo Projects</h2>
-                <div id="slides">
-                    <div style="background-image: url(img/listio.png)" onclick="location.href='http://brianhuot.com/Listio/'"><div class="slide-info"><p>List.io is the front-end framework, written in vanilla JavaScript, for a to-do list. Basic functionality includes adding, reordering, and deleting list items.</p></div></div> <!--Add onclick event to each after adding link-->
-                    <div style="background-image: url(img/quizme.jpg)" onclick="location.href='http://brianhuot.com/quiz-site/'"><div class="slide-info"><p>Quiz.me is a fully functional two-person quiz game written in vanilla JavaScript. Player 1 enters a series of questions and answers which will then be answered by Player 2. Finally, a score is calculated and the player is shown which questions were answered correctly or incorrectly.</p></div></div>
-                </div> 
-            </div>
+          </div>
         </div>
-    </body>
-    <footer>
-            <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a>, and <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY.</a></div>
-    </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/skippr.js"></script>
-    <script src="js/scripts.js"></script>
+      </footer>
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+      <script src="scripts.js"></script>
+    </div>
+  </body>
 </html>
